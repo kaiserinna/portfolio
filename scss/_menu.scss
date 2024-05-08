@@ -63,7 +63,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($primary-color, 5);
+    background: darken($primary-color, 8);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -86,14 +86,31 @@
     }
 
     .portrait {
-      width: 250px;
-      height: 250px;
+      width: 20vh;
+      height: 20vh;
       background: url("../img/portrait_small.jpg");
       background-size: cover;
-      background-position-x: 90%;
-      background-position-y: 90;
+      // background-position-x: 90%;
+      // background-position-y: 90;
       border-radius: 50%;
       border: solid 3px $secondary-color;
     }
+  }
+
+  .nav-item {
+    transform: translate3d(600px, 0, 0);
+    @include easeOut;
+
+    &.show {
+      // slide in from right
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+//Delay each nac item slide by 0.1s
+@for $x from 1 through 4 {
+  .nav-item:nth-child(#{$x}) {
+    transition-delay: $x * 0.1s;
   }
 }
