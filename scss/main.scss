@@ -132,6 +132,32 @@ main {
   }
 }
 
+// Contact paige
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+
+  div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+    @include easeOut;
+
+    &:hover {
+      padding: 1.5rem 2.5rem;
+      background: $secondary-color;
+      color: #fff;
+      span {
+        color: #fff;
+      }
+    }
+  }
+}
+
 // Button Styles
 .btn {
   display: block;
