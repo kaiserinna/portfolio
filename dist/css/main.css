@@ -185,6 +185,17 @@ main {
     padding: 0.5rem;
     border-bottom: #000000 5px solid; }
 
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
+    width: 100%;
+    border: 3px #FFF solid; }
+    .projects img:hover {
+      opacity: 0.4;
+      border-color: #000000;
+      transition: all 0.3s ease-out; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;

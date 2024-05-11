@@ -116,6 +116,29 @@ main {
   }
 }
 
+//Work/Projects
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    border: 3px #FFF solid;
+
+    &:hover {
+      opacity: 0.4;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}
+
+// Button Styles
+.btn {
+  
+}
+
+
 #main-footer {
   text-align: center;
   padding: 1rem;
