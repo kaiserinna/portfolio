@@ -1,7 +1,6 @@
 @import "config";
 @import "menu";
 
-
 * {
   box-sizing: border-box;
 }
@@ -123,7 +122,7 @@ main {
 
   img {
     width: 100%;
-    border: 3px #FFF solid;
+    border: 3px #fff solid;
 
     &:hover {
       opacity: 0.4;
@@ -135,9 +134,27 @@ main {
 
 // Button Styles
 .btn {
-  
+  display: block;
+  padding: 0.5rem 1 rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
 }
 
+.btn-dark {
+  @extend .btn;
+  background: #2d89a5;
+  color: #fff;
+}
+
+.btn-light {
+  @extend .btn;
+  background: #a1cbd7;
+  color: #000;
+}
 
 #main-footer {
   text-align: center;
