@@ -19,7 +19,7 @@
       opacity: 0; }
     .menu-btn.close .btn-line:nth-child(3) {
       transform: rotate(-45deg) translate(7px, -6px); }
-t
+
 .menu {
   position: fixed;
   top: 0;
