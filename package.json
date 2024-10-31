@@ -6,7 +6,8 @@
   "homepage": "https://kaiserinna.github.io/portfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "www": "cp -r dist/* /var/www/html/kaiserinna"
   },
   "author": "Kaisa Punakorpi",
   "license": "MIT",
