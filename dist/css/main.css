@@ -107,7 +107,7 @@ body {
     background-size: cover; }
     body#bg-img:after {
       content: "";
-      position: absolute;
+      position: fixed;
       background-attachment: scroll;
       top: 0;
       right: 0;
@@ -162,9 +162,9 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3" "cvgrid cvgrid cvgrid";
   grid-template-columns: repeat(3, 1fr); }
-  .about-info .bio-image {
+  .bio-image {
     width: 250px;
     height: 250px;
     grid-area: bioimage;
@@ -172,15 +172,22 @@ main {
     border-radius: 50%;
     border: #000000 3px solid;
     background-position-x: 80%; }
-  .about-info .bio {
+  .bio {
     grid-area: bio;
     font-size: 1.5rem; }
-  .about-info .job-1 {
+  .job-1 {
     grid-area: job1; }
-  .about-info .job-2 {
+  .job-2 {
     grid-area: job2; }
-  .about-info .job-3 {
+  .job-3 {
     grid-area: job3; }
+  .cv {
+    grid-area: cvgrid;
+    text-align: center;
+    &:hover {
+      color: #000;
+    }
+  }
   .about-info .job {
     background: #6bb7ce;
     padding: 0.5rem;
