@@ -7,7 +7,7 @@
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist",
-    "www": "cp -r dist/* /var/www/html/kaiserinna"
+    "www": "git pull; cp -r dist/* /var/www/html/kaiserinna"
   },
   "author": "Kaisa Punakorpi",
   "license": "MIT",
