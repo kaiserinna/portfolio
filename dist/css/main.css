@@ -247,6 +247,14 @@ main {
   color: #000;
   height: 60px; }
 
+.tavutus {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+
+}
+
+
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
